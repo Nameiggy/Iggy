@@ -10,4 +10,5 @@ __pycache__
 .env*
 *.lock
 *.html
-  Lib
+ Lib
+ ckeckpy.py

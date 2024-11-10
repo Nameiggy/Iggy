@@ -1,12 +1,12 @@
-Login,password,address1,address2,pass1,arrive,depart
-jojo,bean,First street,Ubery,Jojo Bean,Portland,Denver
-mark,tven,Boom street,Akron,Mark Tven,San Francisco,Frankfurt
-tony,versety,Beach street,Vicecity,Tony Versety,Seattle,London
-thomas,shelbi,Opolo street,Boston,Thomas Shelby,Sydney,Los Angeles
-cliver,abramson,Fire street,Buffalo,Oliver Abromson,Zurich,Paris
-jack,james,Frends street,Cary,Jack James,Denwer,Portland
-harry,bishop,Obama street,Concord,Harry Bishop,Frankfurt,San Francisco
-jacobs,logmans,Wall Street,Erie,Jacob Logman,London,Seattle
-charley,mason,Liberty street,Frisco,Charley Mason,Los Angeles,Sydney
-george,miller,Lafayette Street,Gresham,George Miller,Paris,Zurich
- c
+Login,password,address1,address2,firstName,lastName,pass1,arrive,depart
+jojo,bean,First street,Ubery,Jojo,Bean,Jojo Bean,Portland,Denver
+mark,tven,Boom street,Akron,Mark,Tven,Mark Tven,San Francisco,Frankfurt
+tony,versety,Beach street,Vicecity,Tony,Versety,Tony Versety,Seattle,London
+thomas,shelbi,Opolo street,Boston,Thomas,Shelby,Thomas Shelby,Sydney,Los Angeles
+cliver,abramson,Fire street,Buffalo,Oliver,Abromson,Oliver Abromson,Zurich,Paris
+jack,james,Frends street,Cary,Jack,James,Jack James,Denwer,Portland
+harry,bishop,Obama street,Concord,Harry,Bishop,Harry Bishop,Frankfurt,San Francisco
+jacobs,logmans,Wall Street,Erie,Jacob,Logman,Jacob Logman,London,Seattle
+charley,mason,Liberty street,Frisco,Charley,Mason,Charley Mason,Los Angeles,Sydney
+george,miller,Lafayette Street,Gresham,George,Miller,George Miller,Paris,Zurich
+ 
