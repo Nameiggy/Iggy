@@ -174,7 +174,7 @@ class PurchaseFlightTicket(SequentialTaskSet): # класс с задачами 
         ) as r_03_0_response:
             pass
             check_http_response(r_03_0_response, "Flight departing from") 
-            self.outboundFlight = re.search(r"<input type=\"radio\" name=\"outboundFlight\" value=\"(.*)\">", r_03_0_response.text).group(1)
+            self.outboundFlight = re.search(r" name=\"outboundFlight\" value=\"(.*)\">", r_03_0_response.text).group(1)
 
     @task
     def uc04_ChooseFightOption(self):
@@ -214,7 +214,7 @@ class PurchaseFlightTicket(SequentialTaskSet): # класс с задачами 
         
     
 class  WebToursBaseUserClass(FastHttpUser): # юзер-класс, принимающий в себя основные параметры теста:
-     wait_time = constant_pacing(cfg.pacing)
+     wait_time = constant_pacing(cfg.webtours_base.pacing)
 
      host = cfg.url
      logger.info(f'WebToursBaseUserClass started. Host: {host}')

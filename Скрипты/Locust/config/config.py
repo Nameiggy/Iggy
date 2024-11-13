@@ -6,20 +6,27 @@ from pydantic import BaseModel, Field
 class ScenarioConfig(BaseModel):
     included: bool
     weight: int
+    pacing: int
 
 class WebToursBaseScenarioConfig(ScenarioConfig):
     ...
 
 class WebToursBaseScenarioConfig(ScenarioConfig):
     ...
+
+class LoadShape(BaseModel):
+    duration: int = Field(default=60, validate_default=True)
+    users: int = Field(default=1, validate_default=True)
+    spawn_rate: float = Field(default=1, validate_default=True)
+    stages_count: int = Field(default=1, validate_default=True)
 
 class Config(BaseSettings):
    locust_locustfile: str = Field("./locustfile.py", env="LOCAST_LOCASTFILE") 
-   url: str = Field('http://localhost:1080', env="URL")
+   url: str = Field('http://webtours.load-test.ru:1080', env="URL")
    loadshape_type: str = Field('baseline', env="LOADSHAPE_TYPE")
    webtours_base: WebToursBaseScenarioConfig
    webtours_cancel: WebToursBaseScenarioConfig
-   pacing: int = Field(5, env="PACING")
+   loadshape: LoadShape = LoadShape()
 """
     класс logConfig описывает логгер с помощью которого имеется возможность
     в произвольный .log-файл (в данном случае это будет test_logs_log)
